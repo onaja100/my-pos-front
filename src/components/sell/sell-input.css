@@ -1,0 +1,49 @@
+/* findItem.css */
+
+.find-item {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjust the space between items */
+    padding: 10px;
+}
+
+.find-item label {
+white-space: nowrap; /* Prevents the text from wrapping */
+margin-right: 10px; /* Space after the label */
+}
+
+.find-item input {
+flex-grow: 1; /* Allows the input to grow and fill the space */
+padding: 8px;
+border: 1px solid #ccc; /* Subtle border */
+border-radius: 4px; /* Rounded corners */
+}
+
+.find-item button {
+padding: 10px 15px;
+background-color: #007bff; /* Modern blue */
+color: white;
+border: none;
+border-radius: 4px; /* Rounded corners */
+cursor: pointer; /* Hand cursor on hover */
+transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.find-item button:hover {
+background-color: #0056b3; /* Darken button color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+.find-item {
+    flex-direction: column; /* Stack the elements vertically on small screens */
+    gap: 5px;
+}
+
+.find-item label,
+.find-item input,
+.find-item button {
+    width: 100%; /* Full width on small screens */
+}
+}
+  
